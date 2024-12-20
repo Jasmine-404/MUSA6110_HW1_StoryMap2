@@ -49,10 +49,17 @@
 
       </br></br>For a more detailed story, please watch the video below.</p>
       <div class="intro-video-container">
-        <video controls class="intro-video">
+        
+        <!--I used lfs to upload the video to Github (because its too large), but the page generated in github doesn't display the video correctly. 
+        However, when I preview locally, the video plays normally.-->
+        
+        <!-- <video controls class="intro-video">
           <source src="data/video/video1.mp4" type="video/mp4">
-        </video>    
+        </video>     -->
+        <iframe src="https://drive.google.com/file/d/15k1gfMCr9Ex9Ea-iEAkyark1_8zdbpB8/preview" 
+                width="100%" height="100%" frameborder="0" allowfullscreen title="Introduction Video"></iframe>
       </div>
+    
       <p class="intro-source-text">(Source:<a href="https://www.youtube.com/watch?v=J-pfeFbssMw">How did The Silk Road Actually Work?</a>)</p>
       <p class="intro-text">Next, let's take a closer look at the route of the Silk Road.</p>
       
@@ -154,8 +161,6 @@
     <p>Author: Jingmiao Fei</p>
     <p>Created for MUSA 6110.</p>
   </footer>
-
-  <!-- 引入 mapbox-gl 和 mapbox-gl-leaflet -->
  
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/index.js" type="module"></script>
