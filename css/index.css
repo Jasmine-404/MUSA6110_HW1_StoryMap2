@@ -23,6 +23,20 @@ footer{
   background-color: #faf2e6;
 }
 
+h1{
+  font-family:'Times New Roman', Times, serif;
+  font-size: larger;
+  color: #5d2521;
+
+}
+
+p{
+  font-family:'Times New Roman', Times, serif;
+  font-size: medium;
+  color: #5d2521;
+
+}
+
 /* Cover Section */
 .cover-section {
   position: relative;
@@ -60,17 +74,34 @@ footer{
   font-size: 5em; 
   font-weight: bold;
   margin: 0;
+  color: #fff;
+
 }
 
 .cover-intro{
   font-style: italic;
   font-weight: bold;
   font-size: 1.5em; 
+  color: #fff;
+
 }
 
 .cover-author{
   font-weight: bold;
   margin: 0;
+  color: #fff;
+}
+.cover-date{
+  color:#fff
+}
+
+.cover-footer{
+  font-weight: bold;
+  color: #fff;
+  position: fixed; /* 固定在页面特定位置 */
+  bottom: 10px; /* 距离页面底部 10px */
+  right: 50px; /* 距离页面右侧 10px */
+  
 }
 
 /*****************************************************/
@@ -83,6 +114,7 @@ footer{
   margin: 2% 20%;
   color: #5d2521;
   font-family:'Times New Roman', Times, serif;
+  font-size: x-large;
 }
 
 .intro-text{
@@ -90,7 +122,7 @@ footer{
   margin: 2% 20%; 
   color: #5d2521;
   font-family:'Times New Roman', Times, serif;
-  
+  font-size: large;
 }
 
 .intro-image-container {
@@ -102,6 +134,43 @@ footer{
   margin: 20px auto;       /* 水平居中 */
   width: 60%;           /* 图片宽度为页面宽度的 80% */
   max-width: 100%;      /* 确保图片不会超过容器宽度 */
+}
+
+.intro-source-text{
+  display: block;       
+  margin: 2% 20%; 
+  color: #5d2521;
+  font-family:'Times New Roman', Times, serif;
+  font-size: smaller;
+}
+
+.slide-source-text{
+  display: block;       
+  margin: 1% ; 
+  color: #5d2521;
+  font-family:'Times New Roman', Times, serif;
+  font-size: smaller;
+}
+
+.cityname-title{
+  text-align: center; /* 水平居中对齐 */
+  margin: 0 auto; /* 确保容器的外边距自动调整 */
+  margin: 2%;
+}
+
+.intro-video-container {
+  display: flex; /* 使用 Flexbox 布局 */
+  justify-content: center; /* 水平居中 */
+  margin: 0 auto; /* 自动设置左右外边距 */
+}
+
+.intro-video {
+  max-width: 60%; /* 限制视频宽度为屏幕的 80% */
+  width: 100%; /* 确保视频根据父容器缩放 */
+  height: auto; /* 保持视频比例 */
+  margin: 0 auto; /* 确保视频本身的居中 */
+  border: 2px solid #ccc; /* （可选）添加边框 */
+  border-radius: 10px; /* （可选）添加圆角 */
 }
 
 /*****************************************************/

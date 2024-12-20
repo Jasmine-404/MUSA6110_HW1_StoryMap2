@@ -65,7 +65,7 @@ class SlideDeck {
             style: function (feature) {
               if (feature.geometry.type === "LineString" || feature.geometry.type === "MultiLineString") {
                 return {
-                  color: "#87CEEB",
+                  color: "#5d2521",
                   weight: 2
                 };
               }
@@ -82,7 +82,6 @@ class SlideDeck {
   updateDataLayer1(data) {
     this.dataLayer.clearLayers();
     const geoJsonLayer = L.geoJSON(data, {
-      // pointToLayer: (p, latlng) => L.marker(latlng),
       pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, {
           radius: 1.5,
@@ -93,8 +92,14 @@ class SlideDeck {
           fillOpacity: 1
         });
       },
-          })
-        .bindTooltip((l) => l.feature.properties.label)
+      onEachFeature: function (feature, layer) {            
+        layer.bindTooltip(feature.properties.label , {
+          permanent: true,     
+          direction: 'top',  
+          className: 'label-tooltip',
+        });              
+      }
+    })
         .addTo(this.dataLayer);
       
         fetch('data/silkroad route.geojson')

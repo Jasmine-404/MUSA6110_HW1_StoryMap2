@@ -17,6 +17,16 @@ function initMapAndSlides(mapId, sectionId, slideDeckClass, layerType) {
     map.attributionControl.addAttribution('<a href="https://www.flaticon.com/free-icons/vietnam" title="vietnam icons">Vietnam icons created by justicon - Flaticon</a>');
     map.attributionControl.addAttribution('<a href="https://www.flaticon.com/free-icons/victoria-day" title="victoria day icons">Victoria day icons created by Freepik - Flaticon</a>');
   }
+
+  if (mapId === 'map-1') {
+    map.attributionControl.addAttribution('<a href="https://hub.arcgis.com/maps/Education::the-silk-roadsthen-and-now/about">Silk Road route and cities</a>');
+  }
+
+  if (mapId === 'map-2') {
+    map.attributionControl.addAttribution('<a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/" >Country Boundary</a>');
+  }
+
+
   // ## The Base Tile Layer
   const baseTileLayer = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: '&copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a> contributors',
