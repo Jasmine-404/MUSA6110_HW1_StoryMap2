@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Story</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <!-- Cover Section -->
+    <section class="cover-section">
+      <div class="cover-image-container">
+        <img src="data/image/cover.jpg" alt="Silk Road Cover Image" class="cover-image">
+        <div class="cover-text">
+          <h1 class="cover-title">The Silk Road</h1>
+          <p class="cover-intro">An ancient corridor connecting East and West,<br> a mysterious journey of adventure.</p>
+          <p class="cover-author"><br>By: Jingmiao Fei</p>
+          <p class="cover-date">Oct 26, 2024</p>
+        </div>
+      </div>
+    </section>
+    <!-- <h1>Story Map</h1>
+    <p>This is a sample scrolling story map (or "scrollytelly" as some call it). It is directed at people learning JavaScript and HTML/CSS for the first time.</p> -->
+  </header>
+
+  <main>
+    <div class="map-sticky-wrapper" id="map-section-0">
+      <div class="map-container">
+        <div class="map" id="map-0"></div>
+      </div>
+      <section class="slide-section">
+        <article class="slide" id="shoppingAroundWorld">
+          <h1>An over view of the Silk Road route</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie hendrerit quam, efficitur vestibulum justo vehicula a.</p>
+          
+        </article>        
+      </section>
+    </div>
+
+    <section class="intro-section">
+      <h1 class="intro-title"><br>————————————<br><br>The History of the Silk Road</h1>
+      <p class="intro-text">This section contains some introductory content setting the stage for the spatial information that is to come. Maybe there are some charts, maybe some pictures. Now that you have the context for the map, let's continue.</p>
+      <div class="intro-image-container">
+        <img src="data/image/cover1.png" alt="intro image 1" class="intro-image">                        
+      </div>
+      <p class="intro-text">Nunc dapibus arcu vel sapien rutrum rhoncus. Pellentesque dignissim, nisi ac pellentesque egestas, urna risus varius leo, eget efficitur risus tortor vel magna.</p>
+      <div class="intro-image-container">
+        <img src="data/image/cover2.jpg" alt="intro image 2" class="intro-image">                        
+      </div>
+      <p class="intro-text">Nunc dapibus arcu vel sapien rutrum rhoncus. Pellentesque dignissim, nisi ac pellentesque egestas, urna risus varius leo, eget efficitur risus tortor vel magna.</p>      
+    </section>
+
+    <div class="map-sticky-wrapper" id="map-section-1">
+      <div class="map-container">
+        <div class="map" id="map-1"></div>
+      </div>
+      <section class="slide-section">
+        <article class="slide" id="silkroad city">
+          <h1>An over view of the Silk Road route</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie hendrerit quam, efficitur vestibulum justo vehicula a.</p>
+          
+        </article>        
+      </section>
+    </div>
+
+    <section class="intro-section">
+      <h1 class="intro-title"><br>———————————<br><br>Historical cities/countries along the Silk Road</h1>
+      <p class="intro-text">This section contains some introductory content setting the stage for the spatial information that is to come. Maybe there are some charts, maybe some pictures. Now that you have the context for the map, let's continue.</p>
+      
+    </section>
+
+    <div class="map-sticky-wrapper" id="map-section-2">
+      <div class="map-container">
+        <div class="map" id="map-2"></div>
+      </div>
+      <section class="slide-section">
+        <article class="slide" id="Shanxi China">
+          <h1>Xi'an, Shanxi - 起点</h1>
+          <div class="city-image-container">
+            <img src="data/image/cover1.png" alt="city image 1" class="city-image">                        
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie hendrerit quam, efficitur vestibulum justo vehicula a.</p>
+          <p>Nullam et metus eu eros facilisis commodo. Vivamus elementum nulla nisi, eget fermentum mauris placerat sed.</p>
+        </article>
+
+        <article class="slide" id="Gansu China">
+          <h1>Gansu</h1>
+          <p>Nunc dapibus arcu vel sapien rutrum rhoncus. Pellentesque dignissim, nisi ac pellentesque egestas, urna risus varius leo, eget efficitur risus tortor vel magna.</p>
+          <p>Suspendisse sed posuere velit, ac gravida elit. Nam viverra vehicula nisl ut gravida.</p>
+        </article>
+
+        <article class="slide" id="Xinjiang China">
+          <h1>Xinjiang</h1>
+          <p>Pellentesque nunc tellus, euismod sed mauris vitae, volutpat viverra metus. Nunc vel nisl massa. Nunc ullamcorper interdum vehicula. Ut at mi congue, lacinia eros eget, gravida libero. Vivamus et cursus lorem. Nulla elementum neque a nunc sollicitudin, eget maximus turpis egestas. In hac habitasse platea dictumst. Maecenas aliquet nibh tempor leo pretium, vel congue dui malesuada. Sed non felis porttitor, laoreet ante ac, volutpat nibh. Sed tincidunt eleifend felis, et porttitor dui interdum scelerisque. Mauris eget eros pharetra, pretium justo nec, commodo tellus. Duis orci sem, vehicula a leo eget, lacinia venenatis neque. Duis purus enim, volutpat dapibus arcu eget, aliquam malesuada nulla. Duis nisi eros, semper eu bibendum condimentum, vehicula vel felis. Integer a lacus dictum, tempor nulla at, ornare ante.</p>
+        </article>
+
+        <article class="slide" id="silkroad other countries">
+          <h1>Other countries</h1>
+          <p>Pellentesque nunc tellus, euismod sed mauris vitae, volutpat viverra metus. Nunc vel nisl massa. Nunc ullamcorper interdum vehicula. Ut at mi congue, lacinia eros eget, gravida libero. Vivamus et cursus lorem. Nulla elementum neque a nunc sollicitudin, eget maximus turpis egestas. In hac habitasse platea dictumst. Maecenas aliquet nibh tempor leo pretium, vel congue dui malesuada. Sed non felis porttitor, laoreet ante ac, volutpat nibh. Sed tincidunt eleifend felis, et porttitor dui interdum scelerisque. Mauris eget eros pharetra, pretium justo nec, commodo tellus. Duis orci sem, vehicula a leo eget, lacinia venenatis neque. Duis purus enim, volutpat dapibus arcu eget, aliquam malesuada nulla. Duis nisi eros, semper eu bibendum condimentum, vehicula vel felis. Integer a lacus dictum, tempor nulla at, ornare ante.</p>
+        </article>
+      </section>
+    </div>
+
+    <section class="intro-section">
+      <h1 class="intro-title"><br>——————————<br><br>The Modern Silk Road</h1>
+      <p class="intro-text">This section contains some introductory content setting the stage for the spatial information that is to come. Maybe there are some charts, maybe some pictures. Now that you have the context for the map, let's continue.</p>
+      <div class="intro-image-container">
+        <img src="data/image/cover1.png" alt="intro image 1" class="intro-image">                        
+      </div>
+      <p class="intro-text">Nunc dapibus arcu vel sapien rutrum rhoncus. Pellentesque dignissim, nisi ac pellentesque egestas, urna risus varius leo, eget efficitur risus tortor vel magna.</p>
+      </section>
+
+  </main>
+
+  <footer>
+    <p>References</p>
+    <p>content inspiration: https://economic-historian.com/2020/11/the-silk-road/</p>
+    <p>silk road cities and route: https://hub.arcgis.com/maps/Education::the-silk-roadsthen-and-now/about</p>
+    <p>country boundary: https://www.naturalearthdata.com/downloads/10m-cultural-vectors/</p>
+    <p>To know more: https://www.youtube.com/watch?v=J-pfeFbssMw</p>
+    <p>Created for MUSA 6110.</p>
+  </footer>
+
+  <!-- 引入 mapbox-gl 和 mapbox-gl-leaflet -->
+ 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>
